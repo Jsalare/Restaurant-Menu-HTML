@@ -1,0 +1,175 @@
+<!-----HTML--Final--Project----->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Out-N-In-menu" content="Out-N-In-restaraunt-menu">
+        <title>Out-N-In | Menu</title>
+        <style>
+            body{
+                background-color: beige;
+
+            }
+
+            hr{
+                border: 3.2px solid rgb(221, 221, 112);
+            }
+
+            #header-img{
+                -webkit-transform-origin-x: scaleX(-1);
+                transform: scaleX(-1);
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                border: 10px solid chocolate;
+            }
+
+            #quadruple-img{
+                width: 40%;
+                display: block;
+                border: 10px solid chocolate;
+            }
+
+            #lettuceburger-img{
+                width: 40%;
+                display: block;
+                border: 10px solid chocolate;
+            }
+
+            #evil-shakes{
+                width: 40%;
+                display: block;
+                border: 10px solid chocolate;
+            }
+
+            
+
+
+        </style>
+    </head>
+
+    <body>
+        <!--Header element which includes, 
+            1. an <img> element of the restaruant name.
+            2. <h1> element of the name of restaraunt with menu text. 
+            3. a <p> element which has a brief welcome to the people visiting the menu.
+            4. a <nav> element which will take people to that location in the website.--->
+        <header>
+<!--1-->    <img id="header-img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/InNOut_2021_logo.svg/800px-InNOut_2021_logo.svg.png"
+            alt="image-of-Out-N-In"/> 
+
+<!--2-->    <h1>Out-N-In Menu</h1>
+
+<!--3-->   <p>Welcome to Out-N-In, a special place living everywhere in the U.S! (except <b>CA, OR, NV, UT, CO, TX, </b>& <b>AZ</b>)</p>
+
+<!--4-->            <nav class="header-navigation-class">
+                <ul>
+                    <li> <a href="#menu">Menu</a></li>
+                    <li> <a href="#order-form">Order Form</a></li>
+                </ul>
+
+            </nav> 
+        </header>
+
+        <!--Main-->
+        <main>
+            <!----Menu-Section---->
+            <section id="menu">
+                <h2>Menu</h2>
+                <br/>
+                <!--MENU Article 1 Quadruple Burger-->
+                <article>
+                    <img id="quadruple-img"
+                    src="quadruple-quadruple.jpg"
+                    alt="quandruple-quandruple-menu-image"/>
+                    <h3>1. Quadruple-Quadruple</h3>
+                    <p>Looking to crave your hunger in a delicious way? Fear not!
+                        the <strong>Quadruple-Quadruple</strong> can easily satisfy that 
+                        anticipated craving! For only <i><u>$7.99</u></i>! This incudes 
+                        <strong>4x</strong> the patties & cheese and garuntees to get you full
+                        <strong>8x</strong> fast! 
+                    </p>
+                </article>
+                <!--MENU Article 1 Quadruple Burger ends-->
+                <br/><br/><hr/>
+                <!--MENU Article 2 Lettuce Burger-->
+                <article>
+                    <br/><br/>
+                    <img id="lettuceburger-img"
+                    src="lettuceburger.jpg"
+                    alt="lettuceburger-menu-img "/>
+                    <h3>2. Lettuceburger</h3>
+                    <p>Looking for something out of the ordinary? Fear not!
+                        <strong>Lettuceburger</strong> is here to satisfy your day! Only 
+                        <i><u>$15.00</u></i> this special burger can be yours!
+                    </p>
+                </article>
+                <!--MENU Article 2 Lettuce Burger ends-->
+                <br><br><hr/>
+                <!--MENU Article 3 Evil Shake-->
+                <article>
+                    <br/><br/>
+                    <img id="evil-shakes"
+                    src="shakes-photoaidcom-invert.jpg"
+                    alt="rgb-shakes-menu-item"/>
+                    <h3>3. Evil Shakes</h3>
+                    <p>As the name of this awesome item states, <strong>Evil Shakes</strong>
+                        are a unique item on our menu that fills your craving withing <strong>0.28392 seconds</strong>!
+                        For only <i><u>$100.00</u></i> you can get one shake with the any of these flavors! 
+                    </p>
+                    <ul>
+                        <li>Spinach</li>
+                        <li>Water</li>
+                        <li>Blueberry</li>
+                    </ul>
+                </article>
+                <!--MENU Article 3 Evil Shake ends-->
+            </section>
+            <!----End of Menu Section---->
+            <br><br><hr width="80%"/>
+
+            <!----Place Order Section---->
+            <section id="order-form">
+                <h2>Place your order</h2>
+                <!--Form element-->
+                <form>
+                    <!--input number-->
+                    <label for="menu-item">Which item would you like?</label>
+                    <input id="menu-item" type="number" min="1" max="3" required>
+                    <br/><br/>
+
+                    <!--checkbox input-->
+                    <label for="add-ons">What add-on would you like? Note: all items have same add-ons!</label><br/><br/>
+                    <input type="checkbox">English Broccolli <br/><br/>
+                    <input type="checkbox">Out-N-In Sauce<br/><br/>
+                    <input type="checkbox">Ketchup<br/><br/>
+
+                    <!--textarea element-->
+                    Any special request you would like for a certain order, type here: <br/><br/>
+                    <textarea rows="5" cols="40" maxlength="100"></textarea> <br/><br/>
+
+                    <!--submit input-->
+                    <label for="checkout"> 
+                    <input id="checkout" type="submit" value="Go to Checkout" required>
+                    
+
+                </form>
+            <!--Form element ends-->
+            </section>
+            <!----End of Place-Order-Section---->
+
+        </main>
+
+        <br/><br/><hr width="80%" />
+        <!--footer elements-->
+    <footer>
+        <p>© made with love by salcedaarr16402</p>
+    </footer>
+
+    </body>
+</html>
